@@ -13,7 +13,7 @@ class App extends Component {
       <>
       <BrowserRouter>
       <Switch>
-      <Route path="/signup" render={(routerProps) => (<SignUp type='signup'
+      <Route path="/signup" render={(routerProps) => (<Landing type='signup'
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
 

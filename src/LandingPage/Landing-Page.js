@@ -9,6 +9,19 @@ import './Landing-Page.css'
 class Landing extends Component {
     state = {  email: '', password: '', name: '' }
 
+    getAccountType = () => {
+        return this.props.type === 'signin' ? 'No Account? Sign Up Here!' : '';
+    };
+
+    geTypeMessage = () => {
+        return this.props.type === 'signup' ? "Go back to login" : '';
+    };
+
+    getButtonType = () => {
+        return this.props.type === 'signin' ? "Sign In" : 'Sign Up';
+    };
+
+
     handleSubmit = async (event) => {
         event.preventDefault();
         
@@ -38,10 +51,22 @@ class Landing extends Component {
                 email: <input onChange={(e) => this.setState({ email: e.target.value})} type="email" /> 
                 password: <input onChange={(e) => this.setState({ password: e.target.value})} type="password" /> 
                 
-                <button>Submit</button>
+                <button>{this.getButtonType()}</button>
             </form>
+            
+           
+                <div>
+                <NavLink to="/signup" >{this.getAccountType()}</NavLink>
+                </div>
 
-            <NavLink to="/signup">No account? Sign up here!</NavLink>
+                <div>
+                <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
+                
+                </div>
+                
+           
+            
+            
             <footer>
                 <p>
                     copyright place holder
