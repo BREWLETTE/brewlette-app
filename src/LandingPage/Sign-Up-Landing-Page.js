@@ -6,7 +6,7 @@ import BrewletteLogo from '../assets/BrewletteLogo.png'
 // getAccountType = () => {
 //     return this.props.type === 'signin' ? 'Sign In' : 'Sign Up';
 // };
-class Landing extends Component {
+class SignUp extends Component {
     state = {  }
     render() { 
         return ( 
@@ -15,7 +15,7 @@ class Landing extends Component {
                 <img src={ BrewletteLogo } alt="hero"></img>
             </div>
             <p className='instructions'>
-                instructions place holder
+                PLEASE SIGN UP HERE-- AGE PARAMETERS
             </p>
             <form>
                 email: <input type="email" /> 
@@ -24,7 +24,7 @@ class Landing extends Component {
                 <button>Submit</button>
             </form>
 
-            <NavLink to="/signup">No account? Sign up here!</NavLink>
+            <NavLink to="/">Go Back To Sign In Page!</NavLink>
             <footer>
                 <p>
                     copyright place holder
@@ -35,27 +35,4 @@ class Landing extends Component {
          );
     }
 }
- 
-export default Landing;
-
-{/* <Route exact path='/' component={Home}/>
-        <Route path='/users/:' component={Profile}/>
-        <Route path='/signin'
-          render={(routerProps) => (
-            <Auth setToken={this.setToken}
-             type='signin'
-             {...routerProps}
-             />
-          )}/>
-      
-      <Route path='/signup'
-          render={(routerProps) => (
-            <Auth setToken={this.setToken}
-             type='signup'
-             {...routerProps}
-             />
-          )}/>
-          <Route path='/todos' render={(routerProps) => this.state.token ? 
-          (<ToDos token={this.state.token} {...routerProps}/>) : (<Redirect to='/signin'/>)}/>
-      </Switch>
-      </BrowserRouter> */}
+export default SignUp;
