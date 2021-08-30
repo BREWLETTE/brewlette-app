@@ -55,7 +55,7 @@ class Landing extends Component {
  
 export default Landing;
 
-{/* <Route exact path='/' component={Home}/>
+/*{ <Route exact path='/' component={Home}/>
         <Route path='/users/:' component={Profile}/>
         <Route path='/signin'
           render={(routerProps) => (
@@ -75,4 +75,4 @@ export default Landing;
           <Route path='/todos' render={(routerProps) => this.state.token ? 
           (<ToDos token={this.state.token} {...routerProps}/>) : (<Redirect to='/signin'/>)}/>
       </Switch>
-      </BrowserRouter> */}
+      </BrowserRouter> }*/
