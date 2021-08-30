@@ -1,23 +1,38 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import BrewletteLogo from '../assets/BrewletteLogo.png'
+import './Landing-Page.css'
+import { getToken } from '../fetch-utils.js';
 
 
-// getAccountType = () => {
-//     return this.props.type === 'signin' ? 'Sign In' : 'Sign Up';
-// };
+
 class SignUp extends Component {
-    state = {  }
+    state = { email: '', password: '' }
+    
+    handleSubmit = async (event) => {
+        event.preventDefault();
+        
+        const token = await getToken(
+            {
+                email: this.state.email,
+                password: this.state.password,
+            },
+            this.props.type
+        );
+        console.log(token)
+        this.props.setToken(token);
+        // this.props.history.push('/roulette');
+    };
     render() { 
         return ( 
-            <>
+            <section className='landing'>
             <div className='logo'>
                 <img src={ BrewletteLogo } alt="hero"></img>
             </div>
             <p className='instructions'>
                 PLEASE SIGN UP HERE-- AGE PARAMETERS
             </p>
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 email: <input type="email" /> 
                 password: <input type="password" /> 
                 
@@ -31,7 +46,7 @@ class SignUp extends Component {
                 </p>
                 <NavLink to='/aboutus'>About Us</NavLink>
             </footer>
-            </>
+            </section>
          );
     }
 }

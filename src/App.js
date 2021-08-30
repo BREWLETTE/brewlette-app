@@ -4,14 +4,22 @@ import SignUp from './LandingPage/Sign-Up-Landing-Page';
 import Landing from './LandingPage/Landing-Page.js';
 
 class App extends Component {
-  state = {  }
+  state = { token: localStorage.getItem('BREWTOKEN') }
+  setToken = (val) => {
+    this.setState({token: val});
+  }
   render() { 
     return (  
       <>
       <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Landing} type='signin'></Route>
-        <Route path='/signup' component={SignUp} type='signup' ></Route>
+      <Route path="/signup" render={(routerProps) => (<SignUp type='signup'
+            setToken={this.setToken} {...routerProps}/>)}>
+            </Route>
+
+            <Route path="/signin" render={(routerProps) => (<Landing type='signin'
+            setToken={this.setToken} {...routerProps}/>)}>
+            </Route>
       <Landing />
       </Switch>
       </BrowserRouter>
