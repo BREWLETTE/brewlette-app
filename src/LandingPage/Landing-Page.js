@@ -79,25 +79,3 @@ class Landing extends Component {
 }
  
 export default Landing;
-
-/*{ <Route exact path='/' component={Home}/>
-        <Route path='/users/:' component={Profile}/>
-        <Route path='/signin'
-          render={(routerProps) => (
-            <Auth setToken={this.setToken}
-             type='signin'
-             {...routerProps}
-             />
-          )}/>
-      
-      <Route path='/signup'
-          render={(routerProps) => (
-            <Auth setToken={this.setToken}
-             type='signup'
-             {...routerProps}
-             />
-          )}/>
-          <Route path='/todos' render={(routerProps) => this.state.token ? 
-          (<ToDos token={this.state.token} {...routerProps}/>) : (<Redirect to='/signin'/>)}/>
-      </Switch>
-      </BrowserRouter> }*/
