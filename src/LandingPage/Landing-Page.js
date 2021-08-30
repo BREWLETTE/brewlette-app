@@ -27,6 +27,7 @@ class Landing extends Component {
         
         const token = await getToken(
             {
+                name: this.state.name,
                 email: this.state.email,
                 password: this.state.password,
             },
@@ -61,12 +62,8 @@ class Landing extends Component {
 
                 <div>
                 <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
-                
                 </div>
                 
-           
-            
-            
             <footer>
                 <p>
                     copyright place holder
