@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import SignUp from './LandingPage/Sign-Up-Landing-Page';
 import Landing from './LandingPage/Landing-Page.js';
 
 class App extends Component {
@@ -13,7 +12,7 @@ class App extends Component {
       <>
       <BrowserRouter>
       <Switch>
-      <Route path="/signup" render={(routerProps) => (<SignUp type='signup'
+      <Route path="/signup" render={(routerProps) => (<Landing type='signup'
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
 
