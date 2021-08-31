@@ -71,8 +71,7 @@ class Landing extends Component {
                 <NavLink to='/aboutus'>About Us</NavLink>
             </footer>
             </section>
-         );
-    }
-}
+};
  
 export default Landing;
+
