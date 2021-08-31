@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from './LandingPage/Landing-Page.js';
+import Home from './Home/Home.js';
 
 class App extends Component {
   state = { token: localStorage.getItem('BREWTOKEN') }
@@ -12,14 +13,16 @@ render() {
       <>
       <BrowserRouter>
       <Switch>
-      <Route path="/signup" render={(routerProps) => (<Landing type='signup'
+      <Route exact path="/signup" render={(routerProps) => (<Landing type='signup'
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
 
             <Route path="/signin" render={(routerProps) => (<Landing type='signin'
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
-      <Landing />
+
+            <Route path="/" render={(routerProps) => (<Home type='home'
+            setToken={this.setToken} {...routerProps}/>)} />
       </Switch>
       </BrowserRouter>
       </>
