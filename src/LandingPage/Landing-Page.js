@@ -55,7 +55,6 @@ class Landing extends Component {
                 <button>{this.getButtonType()}</button>
             </form>
             
-           
                 <div>
                 <NavLink to="/signup" >{this.getAccountType()}</NavLink>
                 </div>
