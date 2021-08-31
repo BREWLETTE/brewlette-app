@@ -7,7 +7,7 @@ class App extends Component {
   setToken = (val) => {
     this.setState({token: val});
   }
-  render() { 
+render() { 
     return (  
       <>
       <BrowserRouter>
