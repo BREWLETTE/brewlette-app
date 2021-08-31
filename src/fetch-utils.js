@@ -1,4 +1,5 @@
-const URL = 'https://the-brewlette.herokuapp.com'
+// const URL = 'https://the-brewlette.herokuapp.com'
+const URL = 'http://localhost:7890'
 
 export async function getToken(signInInfo, type) {
 
@@ -17,7 +18,7 @@ export async function getToken(signInInfo, type) {
 
 export async function getBreweries(token) {
 
-    const authURL = `${URL}/api/roulette }`; // confer with Back End <<<<<<<<<<<<<
+    const authURL = `${URL}/api/breweries}`; // confer with Back End <<<<<<<<<<<<<
     const response = await fetch(authURL, {
         method: 'GET',
         headers: {
@@ -31,7 +32,7 @@ export async function getBreweries(token) {
 
 export async function createFavorite(token, favorite) {
 
-    const authURL = `${URL}/api/favorite`; 
+    const authURL = `${URL}/api/breweries`; 
     const response = await fetch(authURL, {
         method: 'POST',
         headers: {
