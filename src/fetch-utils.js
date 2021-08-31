@@ -60,3 +60,4 @@ export async function updateBreweryData(token, favorite) {
     const updateData = await response.json();
     return updateData;
 }
+
