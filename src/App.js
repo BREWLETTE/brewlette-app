@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from './LandingPage/Landing-Page.js';
 import Home from './Home/Home.js';
 import Roulette from './Roulette/Roulette.js';
+import { Footer } from './Footer';
+import './App.css';
+
 
 class App extends Component {
   state = { token: localStorage.getItem('BREWTOKEN') }
@@ -29,6 +32,9 @@ render() {
             setToken={this.setToken} {...routerProps}/>)} />
 
       </Switch>
+
+      <Footer />
+
       </BrowserRouter>
       </>
     );

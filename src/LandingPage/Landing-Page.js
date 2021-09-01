@@ -40,6 +40,7 @@ class Landing extends Component {
 
     render() { 
         return ( 
+            <>
             <section className='container'>
 
             <div className='logo'>
@@ -65,15 +66,9 @@ class Landing extends Component {
                 <div className="navlink">
                 <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
                 </div>
-                
-            <footer>
-                <p>
-                    copyright place holder
-                </p>
-                <NavLink to='/aboutus'>About Us</NavLink>
-            </footer>
 
             </section>
+            </>
         )
     }
 };
