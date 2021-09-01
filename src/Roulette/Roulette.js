@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 // import { Wheel } from 'react-custom-roulette'
+import Spinner from '../Spinner/Spinner.js';
 
 class Roulette extends Component {
-    state = { query: '', brewery: []}
+    state = { query: '', 
+    brewery: [],
+    spinny:false
+}
 
     componentDidMount(){
         this.fetchData();
@@ -25,13 +29,27 @@ class Roulette extends Component {
     handleSearch = async (e) => {
         e.preventDefault();
         const data = await this.fetchData();
-        this.setState({ brewery: data[0]})
-        console.log("search", this.state)
+        const oneData = Math.floor(Math.random() * data.length)
+        console.log(oneData);
+        this.setState({ brewery: data[oneData]})
+        // console.log("search", this.state.brewery)
     }
     
+
     handleQueryUpdate = async (event) => {
         await this.setState({ query: event.target.value });
     }
+
+    handleSpinClick = async (e) => {
+        e.preventDefault();
+
+        const data = await this.fetchData();
+        const newPrizeNumber = Math.floor(Math.random() * data.length)
+        this.setState({ brewery: data[newPrizeNumber], spinny: true})
+        this.setState({spinny:false})
+        
+        console.log(this.state.brewery)
+      } 
 
     render() { 
 
@@ -44,9 +62,14 @@ class Roulette extends Component {
                 <button onClick={this.handleSearch}>Search</button>
             </form>
            
-            <div className="roulette-wheel">
+            
+                <Spinner 
+                    brewData={this.state.brewery}
+                    handleSpin={this.handleSpinClick}
+                    realSpinny = {this.state.spinny}
+                    />
                 
-            </div>
+
             </>
          );
     }
