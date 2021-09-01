@@ -40,26 +40,29 @@ class Landing extends Component {
 
     render() { 
         return ( 
-            <section className='landing'>
+            <section className='container'>
+
             <div className='logo'>
                 <img src={ BrewletteLogo } alt="hero"></img>
             </div>
+
             <p className='instructions'>
-                instructions place holder
-            </p>
+            Topping cotton candy topping gingerbread jujubes. Shortbread oat cake powder chocolate cake bear claw pudding pastry. Cake croissant donut fruitcake marshmallow chocolate candy canes gingerbread carrot cake.</p>
+
             <form onSubmit={this.handleSubmit}>
-                name: <input onChange={(e) => this.setState({ name: e.target.value})} type='name' /> 
-                email: <input onChange={(e) => this.setState({ email: e.target.value})} type="email" /> 
-                password: <input onChange={(e) => this.setState({ password: e.target.value})} type="password" /> 
+
+                <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' /> 
+                <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" /> 
+                <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" /> 
                 
                 <button>{this.getButtonType()}</button>
             </form>
             
-                <div>
+                <div className="navlink">
                 <NavLink to="/signup" >{this.getAccountType()}</NavLink>
                 </div>
 
-                <div>
+                <div className="navlink">
                 <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
                 </div>
                 
@@ -69,6 +72,7 @@ class Landing extends Component {
                 </p>
                 <NavLink to='/aboutus'>About Us</NavLink>
             </footer>
+
             </section>
         )
     }
