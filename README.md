@@ -1,4 +1,4 @@
-# BREWLETTE APP 
+# BREWLETTE APP VERSION 1.0.0
 
 DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 
