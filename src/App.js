@@ -6,13 +6,21 @@ import Roulette from './Roulette/Roulette.js';
 import { Footer } from './Footer';
 import './App.css';
 
+import Detail from './Detail/Detail.js';
 
 class App extends Component {
-  state = { token: localStorage.getItem('BREWTOKEN') }
+  state = { token: JSON.parse(localStorage.getItem('BREWTOKEN')), brewery:{} }
   setToken = (val) => {
     this.setState({token: val});
   }
+  stateHandler = async (brewObj) => {
+    console.log('setHandler RUNNING')
+    await this.setState({
+      brewery: brewObj
+    })
+  }
 render() { 
+  console.log(this.state.brewery);
     return (  
       <>
       <BrowserRouter>
@@ -29,7 +37,15 @@ render() {
             setToken={this.setToken} {...routerProps}/>)} />
 
             <Route path="/roulette" render={(routerProps) => (<Roulette type='roulette'
-            setToken={this.setToken} {...routerProps}/>)} />
+          
+            token={this.state.token}
+            brewery={this.state.brewery} 
+            stateHandler={this.stateHandler} 
+            {...routerProps}/>)} />
+
+            <Route path="/detail" render={(routerProps) => (<Detail type='detail'
+             token={this.state.token} brewery={this.state.brewery} {...routerProps}/>)} />  
+
 
       </Switch>
 
