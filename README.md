@@ -2,7 +2,8 @@
 
 # BREWLETTE APP VERSION 1.0.0
 
-DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
+## DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
+In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendly Brewlette app. Working remotely, the team utilized multiple tools to stay connected and openly communicate on project plans. Our team utilized highly practiced and desired frameworks, libraries, etc. to create an easy fun app that randomly finds you a place to drink. 
 
 # REFERENCES
 ## API
@@ -36,6 +37,8 @@ DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Monte
 - PostgreSQL
 
 ## Tools
+- Heroku
+- Netlify
 - Miro 
 - Coolors 
 - InkScape
