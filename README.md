@@ -55,21 +55,21 @@ Brewlette is a major problem solving app built for you by major problem solvers.
 - good commits when ACP(P)
 
 
-## SCHEDULE
+# SCHEDULE
 
-# 9-915 SCRUM
+## 9-915 SCRUM
 What is the objective for today?
 merge into MAIN (if needed)
 everyone pull MAIN
 
-# 1150-12 SCRUM
+## 1150-12 SCRUM
 quick check in
 set up for after lunch tasks
 merge final commits into DEV
 
-# 12-1 LUNCH
+## 12-1 LUNCH
 
-# 545-6 REFLECTION
+## 545-6 REFLECTION
 merge into final commits into DEV || MAIN
 - Who is working on what EXACTLY after hours?
 - One thing that went well today?
