@@ -33,7 +33,7 @@ class Landing extends Component {
             },
             this.props.type
         );
-        console.log(token)
+      
         this.props.setToken(token);
         this.props.history.push('/roulette');
     };

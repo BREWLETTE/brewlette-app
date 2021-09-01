@@ -1,5 +1,5 @@
-const URL = 'https://the-brewlette.herokuapp.com'
-// const URL = 'http://localhost:7890'
+// const URL = 'https://the-brewlette.herokuapp.com'
+const URL = 'http://localhost:7890'
 
 export async function getToken(signInInfo, type) {
 
@@ -12,7 +12,8 @@ export async function getToken(signInInfo, type) {
         body: JSON.stringify(signInInfo),
     });
     const data = await response.json();
-    localStorage.setItem('BREWTOKEN', data.token);
+    
+    localStorage.setItem('BREWTOKEN', JSON.stringify(data.token));
     return data.token;
 }
 
