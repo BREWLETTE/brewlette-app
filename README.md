@@ -1,4 +1,3 @@
-![Screen Shot 2021-09-01 at 3 39 20 PM](https://user-images.githubusercontent.com/80484840/131754600-2ba5afff-0490-420a-af7c-1d294c682494.png)
 # still need clearly defined end points with examples------
 
 # BREWLETTE APP VERSION 1.0.0
@@ -113,6 +112,7 @@ merge into final commits into DEV || MAIN
 
 
 # NOTES
+![Screen Shot 2021-09-01 at 3 39 20 PM](https://user-images.githubusercontent.com/80484840/131754600-2ba5afff-0490-420a-af7c-1d294c682494.png)
 
 ![Screen Shot 2021-09-01 at 3 36 19 PM](https://user-images.githubusercontent.com/80484840/131754359-6e016dbd-c599-46be-a744-b868c9128eb3.png)
 
