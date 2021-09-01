@@ -114,7 +114,8 @@ merge into final commits into DEV || MAIN
 
 
 # NOTES
-![Screen Shot 2021-09-01 at 3 39 20 PM](https://user-images.githubusercontent.com/80484840/131754600-2ba5afff-0490-420a-af7c-1d294c682494.png)
+![Screen Shot 2021-09-01 at 3 58 33 PM](https://user-images.githubusercontent.com/80484840/131756278-7630ddf8-45f3-4341-af75-f9d31b7e8e5e.png)
+
 
 ![Screen Shot 2021-09-01 at 3 36 19 PM](https://user-images.githubusercontent.com/80484840/131754359-6e016dbd-c599-46be-a744-b868c9128eb3.png)
 
