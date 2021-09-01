@@ -60,6 +60,7 @@ class Roulette extends Component {
             <form>
                 <input type="text" onChange={this.handleQueryUpdate}></input>
                 <button onClick={this.handleSearch}>Search</button>
+                
             </form>
            
             
@@ -67,9 +68,12 @@ class Roulette extends Component {
                     brewData={this.state.brewery}
                     handleSpin={this.handleSpinClick}
                     realSpinny = {this.state.spinny}
-                    />
+                />
                 
-
+            <div>
+                <p>{this.state.brewery.brewery_name}</p>
+                <iframe src={this.state.brewery.five_mile_proxylink} title="description"></iframe>
+            </div>
             </>
          );
     }
