@@ -3,6 +3,8 @@
 DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 
 # REFERENCES
+REACT-ROUTLETTE-SPINNER
+API
 
 
 # TECH STACK
