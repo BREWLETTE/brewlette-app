@@ -1,31 +1,31 @@
-## BREWLETTE APP 
+# BREWLETTE APP 
 
-# DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
+DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 
-## TECH STACK
+# TECH STACK
 
-# Frameworks
+## Frameworks
 - ReactJS
 
-# Libraries
+## Libraries
 - Node-fetch 
 - React-router-dom 
 - React-roulette 
 - Express 
 
-# Languages
+## Languages
 - JavaScript 
 - CSS 
 
-# Testing
+## Testing
 - Jest Suite 
 - TDD
 - CI 
 
-# Databases
+## Databases
 - PostgreSQL
 
-# Tools
+## Tools
 - Miro 
 - Colors 
 - Inkscaped
