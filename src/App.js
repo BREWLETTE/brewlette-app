@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from './LandingPage/Landing-Page.js';
 import Home from './Home/Home.js';
+import Roulette from './Roulette/Roulette.js';
 
 class App extends Component {
   state = { token: localStorage.getItem('BREWTOKEN') }
@@ -13,7 +14,7 @@ render() {
       <>
       <BrowserRouter>
       <Switch>
-      <Route exact path="/signup" render={(routerProps) => (<Landing type='signup'
+      <Route path="/signup" render={(routerProps) => (<Landing type='signup'
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
 
@@ -21,8 +22,12 @@ render() {
             setToken={this.setToken} {...routerProps}/>)}>
             </Route>
 
-            <Route path="/" render={(routerProps) => (<Home type='home'
+            <Route exact path="/" render={(routerProps) => (<Home type='home'
             setToken={this.setToken} {...routerProps}/>)} />
+
+            <Route path="/roulette" render={(routerProps) => (<Roulette type='roulette'
+            setToken={this.setToken} {...routerProps}/>)} />
+
       </Switch>
       </BrowserRouter>
       </>
