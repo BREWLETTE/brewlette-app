@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { Wheel } from 'react-custom-roulette'
+import Spinner from '../Spinner/Spinner.js';
 
 class Roulette extends Component {
     state = { query: '', brewery: []}
@@ -33,6 +34,11 @@ class Roulette extends Component {
         await this.setState({ query: event.target.value });
     }
 
+    handleSpinClick = (data, setPrizeNumber, setMustSpin) => {
+        const newPrizeNumber = Math.floor(Math.random() * data.length)
+        setPrizeNumber(newPrizeNumber)
+        setMustSpin(true)
+      } 
     render() { 
 
         return ( 
@@ -44,9 +50,10 @@ class Roulette extends Component {
                 <button onClick={this.handleSearch}>Search</button>
             </form>
            
-            <div className="roulette-wheel">
+            
+                <Spinner onClick={this.handleSpinClick}/>
                 
-            </div>
+
             </>
          );
     }

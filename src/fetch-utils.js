@@ -1,5 +1,5 @@
-// const URL = 'https://the-brewlette.herokuapp.com'
-const URL = 'http://localhost:7890'
+const URL = 'https://the-brewlette.herokuapp.com'
+// const URL = 'http://localhost:7890'
 
 export async function getToken(signInInfo, type) {
 
