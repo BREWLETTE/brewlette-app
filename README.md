@@ -3,10 +3,13 @@
 DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 
 # REFERENCES
-REACT-ROUTLETTE-SPINNER
-API
+## API
+- https://beermapping.com/api/examples/
+- https://beermapping.com/api/reference/
+- https://beermapping.com/?lat=42.36008&lon=-71.05888&z=13
 
-
+## react-custom-spinner
+- https://www.npmjs.com/package/react-custom-roulette
 # TECH STACK
 
 ## Frameworks
