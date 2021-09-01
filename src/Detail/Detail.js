@@ -4,14 +4,24 @@ import { getBreweries, createFavorite, updateBreweryData } from '../fetch-utils.
 class Detail extends Component {
     state = { brewery: [], favorite: false }
 
-    componentDidMount = async () => {
-        this.fetchBreweriesData();
+    loadData = async () => {
+        const { id } = this.props.match.params;
+        const url = `http://URL/API_KEY/${id}`;
+        const resp = await fetch(url);
+        const data = await resp.json();
+        setTimeout(() => {
+            this.setState({ data, loading: false });
+          }, 1000);
     };
 
-    fetchBreweriesData = async () => {
-        const data = await getBreweries(this.props.token);
-        this.setState({ brewery: data });
+    componentDidMount = async () => {
+        this.loadData();
     };
+
+    // fetchBreweriesData = async () => {
+    //     const data = await getBreweries(this.props.token);
+    //     this.setState({ brewery: data });
+    // };
     
     render() { 
         return ( 
