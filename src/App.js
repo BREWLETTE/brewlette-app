@@ -5,6 +5,7 @@ import Home from './Home/Home.js';
 import Roulette from './Roulette/Roulette.js';
 import { Footer } from './Footer';
 import './App.css';
+import About from './About.js';
 
 import Detail from './Detail/Detail.js';
 
@@ -34,6 +35,9 @@ render() {
             <Route exact path="/" render={(routerProps) => (<Home type='home'
             setToken={this.setToken} {...routerProps}/>)} />
 
+            <Route path='/aboutus' render={(routerProps) => (<About type='aboutus'
+            {...routerProps}/>)}/>
+
             <Route path="/roulette" render={(routerProps) => (<Roulette type='roulette'
           
             token={this.state.token}
@@ -46,7 +50,9 @@ render() {
 
       </Switch>
 
-      <Footer />
+      <Footer/>
+
+      
 
       </BrowserRouter>
       </>
