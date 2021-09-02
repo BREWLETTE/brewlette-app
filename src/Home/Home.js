@@ -9,7 +9,7 @@ class Home extends Component {
     state = { showMessage: 'No', hidden: false }
 
     handleClick = () => {
-        this.setState({ showMessage: "Try again next year" })
+        this.setState({ showMessage: "Try again next year!" })
         this.setState({ hidden: true });
     }
 
@@ -17,7 +17,7 @@ class Home extends Component {
         return ( 
             <section className="home">
 
-            <h1>Welcome to Brewlette!</h1>
+            <h1>Welcome to...</h1>
 
             <div className='logo'>
                 <img src={ BrewletteLogo } alt="hero"></img>

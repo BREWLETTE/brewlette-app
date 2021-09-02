@@ -5,6 +5,7 @@ import Home from './Home/Home.js';
 import Roulette from './Roulette/Roulette.js';
 import { Footer } from './Footer';
 import './App.css';
+import About from './About.js';
 
 import Detail from './Detail/Detail.js';
 
@@ -37,6 +38,7 @@ render() {
             
             <Route exact path="/" render={(routerProps) => (<Home type='home'
             setToken={this.setToken} {...routerProps}/>)} />
+
              
              <Route path="/roulette" 
              render={(routerProps) => this.state.token ? 
@@ -46,28 +48,17 @@ render() {
              stateHandler={this.stateHandler} 
              {...routerProps}/>) : 
              (<Redirect to='/signin'/>)} />
-             
+            
 
             <Route path="/detail" render={(routerProps) => (<Detail type='detail'
              token={this.state.token} brewery={this.state.brewery} {...routerProps}/>)} />  
 
-{/* {this.state.token && (
-                        <>
-                            <NavLink to="/todos">To Do List</NavLink>
-                            <Link to="/" onClick={this.logout}>
-                                Logout{' '}
-                            </Link>
-                        </>
-                    )}
-                    {!this.state.token && (
-                        <>
-                            <NavLink to="/signin">Sign In</NavLink>
-                            <NavLink to="/signup">Sign Up</NavLink>
-                        </> */}
 
       </Switch>
 
-      <Footer />
+      <Footer/>
+
+      
 
       </BrowserRouter>
       </>
