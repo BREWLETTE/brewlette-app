@@ -27,7 +27,9 @@ class Detail extends Component {
     render() { 
         return ( 
             <main>
-                <section className="been-here">This is one of your favorites!</section>
+                              {/* COme back to this BELOW */}
+                <section className="been-here">This is one of your favorites!</section> 
+                
                 <section className="map"></section>
                 <section className="info">
                     <h1>{this.props.brewery.brewery_name}</h1>

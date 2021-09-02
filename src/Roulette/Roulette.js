@@ -81,11 +81,12 @@ class Roulette extends Component {
                 </div>
                 
                 <div className="brewery-box">
-                    < NavLink to={'/detail'}>
-                        <p>{this.state.brewery.brewery_name}</p>
-                        {/* <p /><h2>{brewery.url}</h2> */}
-                        {/* {brewery.street}, {brewery.city} */}
-                        {/* <p />{brewery.reviewlink} */}
+                    <NavLink to={'/detail'}>
+                        <h3>{this.state.brewery.brewery_name}</h3>
+                        <p>{this.state.brewery.url}</p> 
+                        <p>{this.state.brewery.address} {this.state.brewery.city} {this.state.brewery.state}</p> 
+                        <p>{this.state.brewery.reviewlink}</p>
+    
                     </NavLink>
                 </div>
                
