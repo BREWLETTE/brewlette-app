@@ -22,7 +22,7 @@ export async function getToken(signInInfo, type) {
 //GET USER BREWERIES
 export async function getBreweries(token) {
 
-    const authURL = `${URL}/api/breweries}`; // confer with Back End <<<<<<<<<<<<<
+    const authURL = `${URL}/api/breweries}`; 
     const response = await fetch(authURL, {
         method: 'GET',
         headers: {
@@ -53,7 +53,7 @@ export async function addBrewToUser(token, newBrew) {
 //UPDATE USER BREWERY DATA
 export async function updateBreweryData(token, favorite) {
 
-    const authURL = `${URL}/api/breweries/${favorite.brewery_id}`; // confer with BE 
+    const authURL = `${URL}/api/breweries/${favorite.id}`; 
     const response = await fetch(authURL, {
         method: 'PUT',
         headers: {
@@ -64,5 +64,4 @@ export async function updateBreweryData(token, favorite) {
     });
     const updateData = await response.json();
     return updateData;
-}
-
+};
