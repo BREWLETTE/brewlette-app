@@ -42,6 +42,21 @@ see API return below
 
 # TECH STACK
 
+| FRAMEWORKS | LIBRARIES             | LANGUAGES  | TESTING    | DATABASES  | TOOLS          |
+|------------|-----------------------|------------|------------|------------|----------------|
+| ReactJS    | Node.js               | JavaScript | Jest Suite | PostgreSQL | VS Code        |
+|            | Node-fetch            | CSS        | TDD        |            | Heroku         |
+|            | React-router-dom      |            | CI         |            | Netlify        |
+|            | React-custom-roulette |            |            |            | Miro           |
+|            | Express               |            |            |            | Postman        |
+|            |                       |            |            |            | Thunder Client |
+|            |                       |            |            |            | BeeKeeper      |
+|            |                       |            |            |            | Coolors        |
+|            |                       |            |            |            | InkScape       |
+|            |                       |            |            |            | Git            |
+|            |                       |            |            |            | GitHub         |
+|            |                       |            |            |            | Slack          |
+
 ## Frameworks
 - ReactJS
 
