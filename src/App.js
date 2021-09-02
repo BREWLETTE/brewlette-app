@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Landing from './LandingPage/Landing-Page.js';
+import {Landing} from './LandingPage';
 import Home from './Home/Home.js';
 import Roulette from './Roulette/Roulette.js';
+import { Footer } from './Footer';
+import './App.css';
+
 import Detail from './Detail/Detail.js';
 
 class App extends Component {
@@ -22,14 +25,12 @@ render() {
       <>
       <BrowserRouter>
       <Switch>
-      <Route path="/signup" render={(routerProps) => (<Landing type='signup'
-            setToken={this.setToken} {...routerProps}/>)}>
-            </Route>
-
+            <Route path="/signup" render={(routerProps) => (<Landing type='signup'
+            setToken={this.setToken} {...routerProps}/>)} />
+            
             <Route path="/signin" render={(routerProps) => (<Landing type='signin'
-            setToken={this.setToken} {...routerProps}/>)}>
-            </Route>
-
+            setToken={this.setToken} {...routerProps}/>)} />
+            
             <Route exact path="/" render={(routerProps) => (<Home type='home'
             setToken={this.setToken} {...routerProps}/>)} />
 
@@ -43,8 +44,10 @@ render() {
             <Route path="/detail" render={(routerProps) => (<Detail type='detail'
              token={this.state.token} brewery={this.state.brewery} {...routerProps}/>)} />  
 
-
       </Switch>
+
+      <Footer />
+
       </BrowserRouter>
       </>
     );

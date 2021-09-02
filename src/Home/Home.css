@@ -2,6 +2,41 @@
     background-color: brown;
 } */
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
+
+.home {
+    height: 100vh;
+    min-width: 345px;
+    padding: 0 10px 0 10px;
+    background-color: rgba(120, 35, 5, .70);
+    margin-bottom: calc(var(--footer-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navlinks-homePage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.not21Box {
+    background-color: rgba(11, 25, 83, .70);
+    height: 150px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-right: 25px;
+}
+
+
