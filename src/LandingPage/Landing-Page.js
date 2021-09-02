@@ -46,7 +46,6 @@ class Landing extends Component {
 
     render() { 
         return ( 
-            <>
             <section className='container'>
 
             <div className='logo'>
@@ -74,7 +73,6 @@ class Landing extends Component {
                 </div>
 
             </section>
-            </>
         )
     }
 };

@@ -15,7 +15,7 @@ class Home extends Component {
 
     render() { 
         return ( 
-            <section className="home">
+            <section className="container">
 
             <h1>Welcome to...</h1>
 
@@ -30,10 +30,10 @@ class Home extends Component {
             <div id="btns-div" className="navlinks-homePage">
 
             <NavLink to="/signin">
-                <button className="buttons"> Yes </button>
+                <button > Yes </button>
 
             </NavLink>
-                <button className="buttons" onClick={this.handleClick}>{this.state.showMessage}</button>
+                <button  onClick={this.handleClick}>{this.state.showMessage}</button>
 
             </div>
             : 
