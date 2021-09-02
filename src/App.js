@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Landing from './LandingPage/Landing-Page.js';
+import {Landing} from './LandingPage';
 import Home from './Home/Home.js';
 import Roulette from './Roulette/Roulette.js';
 import { Footer } from './Footer';

@@ -6,10 +6,11 @@ import BrewletteLogo from '../assets/BrewletteLogo.png';
 
 
 class Home extends Component {
-    state = { showMessage: 'No'}
+    state = { showMessage: 'No', hidden: false }
 
     handleClick = () => {
-        this.setState({showMessage: "Try again next year"})
+        this.setState({ showMessage: "Try again next year" })
+        this.setState({ hidden: true });
     }
 
     render() { 
@@ -25,18 +26,22 @@ class Home extends Component {
             <h3>You must be 21 or older to enter</h3>
             <h2>You're 21, right?</h2>
 
-            <div className="navlinks-homePage">
+            {!this.state.hidden ? 
+            <div id="btns-div" className="navlinks-homePage">
 
-                <NavLink to="/signin">
-                    <button className="hidden"> Yes </button>
+            <NavLink to="/signin">
+                <button className="buttons"> Yes </button>
 
-                </NavLink>
-                    
-                    <button id="button1" className ="hidden" onClick={this.handleClick}>{this.state.showMessage}</button>
-    
+            </NavLink>
+                <button className="buttons" onClick={this.handleClick}>{this.state.showMessage}</button>
+
             </div>
-
+            : 
             <div className="not21Box">{this.state.showMessage}</div>
+            } 
+
+
+           
             
             </section>
             
