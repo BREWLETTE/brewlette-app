@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 // import { Wheel } from 'react-custom-roulette'
 import Spinner from '../Spinner/Spinner.js';
+import './Roulette.css';
 
 class Roulette extends Component {
     state = { query: '', 
@@ -62,28 +63,34 @@ class Roulette extends Component {
     render() { 
 
         return ( 
-            <>
-            <h1>Roulette Page</h1>
+            <section className="container">
+            
+            <h1>Let's play Brewlette!</h1>
 
             <form>
-                <input type="text" onChange={this.handleQueryUpdate}></input>
+                <input placeholder="city, state" type="text" onChange={this.handleQueryUpdate}></input>
                 {/* <button onClick={this.handleSearch}>Search</button> */}
             </form>
-           
-            
-                <Spinner 
-                    brewData={this.state.brewery}
-                    handleSpin={this.handleSpinClick}
-                    realSpinny = {this.state.spinny}
-                />
+
+                <div className="roulette-wheel">
+                    <Spinner 
+                        brewData={this.state.brewery}
+                        handleSpin={this.handleSpinClick}
+                        realSpinny = {this.state.spinny}
+                    />
+                </div>
                 
-            < NavLink to={'/detail'}>
-                <p>{this.state.brewery.brewery_name}</p>
-            </NavLink>
-                
-                <iframe src={this.state.brewery.five_mile_proxylink} title="description"></iframe>
+                <div className="brewery-box">
+                    < NavLink to={'/detail'}>
+                        <p>{this.state.brewery.brewery_name}</p>
+                        {/* <p /><h2>{brewery.url}</h2> */}
+                        {/* {brewery.street}, {brewery.city} */}
+                        {/* <p />{brewery.reviewlink} */}
+                    </NavLink>
+                </div>
+               
             
-            </>
+            </section>
          );
     }
 }
