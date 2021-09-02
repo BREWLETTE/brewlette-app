@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // import { Wheel } from 'react-custom-roulette'
 import Spinner from '../Spinner/Spinner.js';
 
@@ -58,12 +58,15 @@ class Roulette extends Component {
         await this.setState({spinny:false})
         this.props.stateHandler(this.state.brewery)
       } 
+      logout = () => {
+        localStorage.removeItem('BREWTOKEN');
+        this.setState({ token: '' });
+    };
 
     render() { 
 
         return ( 
             <>
-            <h1>Roulette Page</h1>
 
             <form>
                 <input type="text" onChange={this.handleQueryUpdate}></input>
@@ -82,7 +85,9 @@ class Roulette extends Component {
             </NavLink>
                 
                 <iframe src={this.state.brewery.five_mile_proxylink} title="description"></iframe>
-            
+                <Link to="/" onClick={this.logout}>
+                                Logout{' '}
+                            </Link>
             </>
          );
     }
