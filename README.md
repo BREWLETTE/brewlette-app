@@ -8,17 +8,62 @@
 In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendly Brewlette app. Working remotely, the team utilized multiple tools to stay connected and openly communicate on project plans. Our team utilized highly practiced and desired frameworks, libraries, etc. to create an easy fun app that randomly finds you a place to drink. 
 
 # REFERENCES
+## react-custom-roulette
+--This roulete spinner and function was used within our roulette page to spin while random function ran. 
+- https://www.npmjs.com/package/react-custom-roulette
+
 ## API
 --This API was used to to render breweries within an array based on location query. Our built random function picked a brewery with the array length based on query and returned one random brewery object to display on page. 
 - https://beermapping.com/api/examples/
 - https://beermapping.com/api/reference/
 - https://beermapping.com/?lat=42.36008&lon=-71.05888&z=13
 
-https://files.slack.com/files-pri/T6FCZF1HR-F02DEU0NN3W/screen_shot_2021-09-02_at_11.02.45_am.png
+see API return below
 
-## react-custom-roulette
---This roulete spinner and function was used within our roulette page to spin while random function ran. 
-- https://www.npmjs.com/package/react-custom-roulette
+[
+    {
+        address: “2220 Blake Street”,
+        brewery_id: 199,
+        brewery_name: “Breckenridge Ball Park Brew Pub”,
+        city: “Denver”,
+        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=199&amp;d=5”,
+        phone_number: “(303) 297-3644”,
+        state: “CO”,
+        url: “breckbrew.com/”,
+        zip_code: “80205",
+        [[Prototype]]: Object
+    },
+    {
+        address: “471 Kalamath St.“,
+        brewery_id: 200,
+        brewery_name: “Breckenridge BBQ and Brew Pub”,
+        city: “Denver”,
+        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=200&amp;d=5”,
+        phone_number: “(303) 623-2739”,
+        state: “CO”,
+        url: “breckbrew.com/”,
+        zip_code: “80204”,
+        [[Prototype]]: Object
+    },
+    {
+        address: “4700 Cherry Creek Dr. South”,
+        brewery_id: 238,
+        brewery_name: “Bull and Bush Pub and Brewery”,
+        city: “Denver”,
+        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=238&amp;d=5”,
+        phone_number: “(303) 759-0333”,
+        state: “CO”,
+        url: “bullandbush.com/”,
+        zip_code: “80246”
+    }
+]
+
+Query Parameters:
+Key	Default	Description
+page	1	page based on perPage offset
+perPage	25	amount of results per page
+name	n/a	
+
 
 # TECH STACK
 
