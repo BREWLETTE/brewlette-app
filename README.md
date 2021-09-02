@@ -58,11 +58,13 @@ see API return below
     }
 ]
 
-Query Parameters:
-Key	Default	Description
-page	1	page based on perPage offset
-perPage	25	amount of results per page
-name	n/a	
+
+<img width="667" alt="Screen Shot 2021-09-02 at 11 17 15 AM" src="https://user-images.githubusercontent.com/80484840/131896021-54899da6-5711-4b86-8388-66ce3a5189e4.png">
+
+
+# DATABASE TABLES
+![Screen Shot 2021-09-02 at 11 15 38 AM](https://user-images.githubusercontent.com/80484840/131895928-64e81a21-60fa-42a0-a7fa-b43420985931.png)
+
 
 
 # TECH STACK
@@ -95,6 +97,7 @@ name	n/a
 - Miro 
 - Postman
 - Thunder Client
+- BeeKeeper
 - Coolors 
 - InkScape
 - Git 
