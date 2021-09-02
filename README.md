@@ -39,9 +39,12 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 - PostgreSQL
 
 ## Tools
+- VS Code
 - Heroku
 - Netlify
 - Miro 
+- Postman
+- Thunder Client
 - Coolors 
 - InkScape
 - Git 
