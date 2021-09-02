@@ -23,7 +23,7 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 
 see API return below
 
-# /breweriesinfo
+# /allbreweryinfo
 
 [
     {
