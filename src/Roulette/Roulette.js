@@ -81,9 +81,13 @@ class Roulette extends Component {
     
                     </NavLink>
                 </div>
-               <Link to="/" onClick={this.logout}>
-                                Logout{' '}
-                            </Link>
+
+                <div className="logout-button">
+                    <Link to="/" onClick={this.logout}>
+                        Logout{' '}
+                    </Link>
+                </div>
+
             
             </section>
 

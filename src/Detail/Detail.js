@@ -52,9 +52,6 @@ class Detail extends Component {
         return ( 
             <section className="container">
 
-                {/* <iframe className="iframe-container" target="_blank" rel="external" src={`${this.props.brewery.five_mile_proxylink}`} title="description">
-                    {this.state.brewery.five_mile_proxylink}</iframe> */}
-
                 <iframe width="350" height="315" src={`${this.props.brewery.five_mile_proxylink}`} frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen title="brewery-places"></iframe>
@@ -73,11 +70,11 @@ class Detail extends Component {
                 <section className="button-box">
                 {!this.state.hidden ?
                     <div>
-                        <button onClick={this.handleAddNewbrew}>WE GOING</button>
+                        <button onClick={this.handleAddNewbrew}>Been here before?</button>
                     </div>
                     : 
                     <div>
-                    <button onClick={this.handleUpdateFave}>Favorite</button>
+                    <button onClick={this.handleUpdateFave}>Save As Favorite</button>
                     </div>
                 }
                 <NavLink to={'/roulette'}>

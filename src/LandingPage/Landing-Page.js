@@ -53,7 +53,7 @@ class Landing extends Component {
             </div>
 
             <p className='instructions'>
-            Topping cotton candy topping gingerbread jujubes. Shortbread oat cake powder chocolate cake bear claw pudding pastry. Cake croissant donut fruitcake marshmallow chocolate candy canes gingerbread carrot cake.</p>
+            Welcome to Brewlette!! A fun way to find a spot to enjoy a nice brew! Just go ahead and login or sign up to get access. After you’re logged in you can just let us know where you’re looking and click “spin”. This will pick a random brewery for you to enjoy. Favorite a brewery that you would like to visit again! Thanks for taking a gamble on us.</p>
 
             <form onSubmit={this.handleSubmit}>
 
