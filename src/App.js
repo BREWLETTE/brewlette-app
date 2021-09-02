@@ -39,6 +39,9 @@ render() {
             <Route exact path="/" render={(routerProps) => (<Home type='home'
             setToken={this.setToken} {...routerProps}/>)} />
 
+            <Route path='/aboutus' render={(routerProps) => (<About type='aboutus'
+            {...routerProps}/>)}/>
+
              
              <Route path="/roulette" 
              render={(routerProps) => this.state.token ? 
