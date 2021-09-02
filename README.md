@@ -9,12 +9,17 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 
 # REFERENCES
 ## API
+--This API was used to to render breweries within an array based on location query. Our built random function picked a brewery with the array length based on query and returned one random brewery object to display on page. 
 - https://beermapping.com/api/examples/
 - https://beermapping.com/api/reference/
 - https://beermapping.com/?lat=42.36008&lon=-71.05888&z=13
 
+https://files.slack.com/files-pri/T6FCZF1HR-F02DEU0NN3W/screen_shot_2021-09-02_at_11.02.45_am.png
+
 ## react-custom-roulette
+--This roulete spinner and function was used within our roulette page to spin while random function ran. 
 - https://www.npmjs.com/package/react-custom-roulette
+
 # TECH STACK
 
 ## Frameworks
