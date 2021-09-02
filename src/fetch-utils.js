@@ -1,5 +1,5 @@
-// const URL = 'https://the-brewlette.herokuapp.com'
-const URL = 'http://localhost:7890'
+const URL = 'https://the-brewlette.herokuapp.com'
+// const URL = 'http://localhost:7890'
 
 
 // GET TOKEN FUNCTION
