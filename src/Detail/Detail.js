@@ -3,14 +3,15 @@ import { NavLink } from 'react-router-dom';
 import { addBrewToUser,updateBreweryData } from '../fetch-utils.js';
 
 class Detail extends Component {
-    state = { brewery: {}, favorite: false,}
 
+    state = { brewery: {}, favorite: false }
+
+    
 
     componentDidMount = async () => {
-        // await this.setState({brewery:this.props.brewery})
-        // console.log("LOOK???",this.state.id)
-        // await this.handleAddNewbrew()
+        console.log("LOOK???",this.props)
     };
+
     token = this.props.token;
 
     handleAddNewbrew = async () => {
@@ -54,10 +55,6 @@ class Detail extends Component {
                 <section className="map"></section>
                 <section className="info">
                     <h1>{this.props.brewery.brewery_name}</h1>
-                    <iframe src={this.props.brewery.five_mile_proxylink} title="description"></iframe>
-                    <p>{this.props.brewery.url}</p>
-                    <p>{this.props.brewery.phone_number}</p>
-                    <p>{this.props.brewery.address},{this.props.city},{this.props.brewery.state}</p>
 
                 </section>
                 <section className="button-box">

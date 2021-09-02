@@ -33,9 +33,15 @@ class Landing extends Component {
             },
             this.props.type
         );
-      
+
         this.props.setToken(token);
         this.props.history.push('/roulette');
+        console.log(typeof(this.state.token))
+        
+         if(token === ''){
+          localStorage.removeItem('BREWTOKEN');
+          this.setState({ token: '' });
+      } 
     };
 
     render() { 
@@ -52,9 +58,9 @@ class Landing extends Component {
 
             <form onSubmit={this.handleSubmit}>
 
-                <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' /> 
-                <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" /> 
-                <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" /> 
+                <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' required /> 
+                <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" required /> 
+                <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" required /> 
                 
                 <button>{this.getButtonType()}</button>
             </form>
