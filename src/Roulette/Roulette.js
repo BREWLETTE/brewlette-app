@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Spinner from '../Spinner/Spinner.js';
 import './Roulette.css';
+import audio from '../assets/can-open-1.mp3';
 
 class Roulette extends Component {
     state = { query: '', 
     brewery: [],
-    spinny:false
+    spinny:false,
 }
 
     componentDidMount(){
@@ -39,6 +40,7 @@ class Roulette extends Component {
         e.preventDefault();
         console.log(this.props);
         const data = await this.fetchData();
+        new Audio(audio).play();
         const newPrizeNumber = Math.floor(Math.random() * data.length)
         await this.setState({ brewery: data[newPrizeNumber], spinny: true})
         await this.setState({spinny:false})
