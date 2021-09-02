@@ -1,6 +1,8 @@
 // const URL = 'https://the-brewlette.herokuapp.com'
 const URL = 'http://localhost:7890'
 
+
+// GET TOKEN FUNCTION
 export async function getToken(signInInfo, type) {
 
     const authURL = `${URL}/auth/${type}`; 
@@ -17,9 +19,10 @@ export async function getToken(signInInfo, type) {
     return data.token;
 }
 
+//GET USER BREWERIES
 export async function getBreweries(token) {
 
-    const authURL = `${URL}/api/breweries}`; // confer with Back End <<<<<<<<<<<<<
+    const authURL = `${URL}/api/breweries}`; 
     const response = await fetch(authURL, {
         method: 'GET',
         headers: {
@@ -31,25 +34,26 @@ export async function getBreweries(token) {
     return breweryData;
 }
 
-export async function createFavorite(token, favorite) {
+//ADD BREWERY TO USER
+export async function addBrewToUser(token, newBrew) {
 
     const authURL = `${URL}/api/breweries`; 
     const response = await fetch(authURL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': token,
-
+            Authorization: token,
         },
-        body: JSON.stringify(favorite),
+        body: JSON.stringify(newBrew),
     });
     const createdData = await response.json();
     return createdData;
 }
 
+//UPDATE USER BREWERY DATA
 export async function updateBreweryData(token, favorite) {
 
-    const authURL = `${URL}/api/favorite/${favorite.id}`; // confer with BE <<<<<<<<<<<<<
+    const authURL = `${URL}/api/breweries/${favorite.id}`; 
     const response = await fetch(authURL, {
         method: 'PUT',
         headers: {
@@ -60,5 +64,4 @@ export async function updateBreweryData(token, favorite) {
     });
     const updateData = await response.json();
     return updateData;
-}
-
+};
