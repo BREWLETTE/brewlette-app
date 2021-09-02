@@ -1,8 +1,7 @@
-![Screen Shot 2021-09-01 at 3 51 49 PM](https://user-images.githubusercontent.com/80484840/131755700-591ca056-73a3-42bd-8ad8-2e668822fae6.png)
-
-# still need clearly defined end points with examples------
 
 # BREWLETTE APP VERSION 1.0.0
+![Screen Shot 2021-09-01 at 3 51 49 PM](https://user-images.githubusercontent.com/80484840/131755700-591ca056-73a3-42bd-8ad8-2e668822fae6.png)
+
 
 ## DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendly Brewlette app. Working remotely, the team utilized multiple tools to stay connected and openly communicate on project plans. Our team utilized highly practiced and desired frameworks, libraries, etc. to create an easy fun app that randomly finds you a place to drink. 
@@ -56,6 +55,38 @@ see API return below
         url: “bullandbush.com/”,
         zip_code: “80246”
     }
+]
+
+
+[
+ {
+   _id: "5f5fb4bbbfd05c2aed82e460",
+   url: "https://animalcrossing.fandom.com/wiki/Admiral",
+   name: "Admiral",
+   japaneseName: "イッテツ Ittetsu",
+   image: "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138",
+   quote: "Only quitters give up.",
+   gender: "male",
+   personality: "cranky",
+   species: "bird",
+   birthday: "January 27th (Aquarius)",
+   phrase: "aye aye",
+   skill: "Writing about pickles",
+   goal: "Fisherman",
+   coffee: 
+     {
+       roast: "Blue Mountain",
+       milk: "The regular amount of milk",
+       sugar: "2 spoonfuls of sugar"
+     },
+   song: 
+     {
+       name: "Steep Hill",
+       link: "https://animalcrossing.fandom.com/wiki/Steep_Hill"
+     },
+   style: "n/a",
+   __v: 0
+ }
 ]
 
 
