@@ -1,7 +1,63 @@
-body {
+/* body {
     background-color: brown;
+} */
+
+.hidden {
+    display: none;
 }
 
-/* .hidden {
-    display: none;
-} */
+.home {
+    height: 100vh;
+    min-width: 345px;
+    padding: 0 10px 0 10px;
+    background-color: rgba(120, 35, 5, .70);
+    margin-bottom: calc(var(--footer-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navlinks-homePage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.not21Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(11, 25, 83, .70);
+    border: #C7941D 2px solid;
+    height: 150px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-right: 25px;
+}
+
+h1 {
+    font-weight: black;
+    font-size: 1.9em;
+}
+
+h2 {
+    color: seashell;
+}
+
+h3 {
+    color: seashell;
+    margin-top: 20px;
+}
+
+
+

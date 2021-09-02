@@ -33,43 +33,48 @@ class Landing extends Component {
             },
             this.props.type
         );
-        console.log(token)
+
         this.props.setToken(token);
         this.props.history.push('/roulette');
+        console.log(typeof(this.state.token))
+        
+         if(token === ''){
+          localStorage.removeItem('BREWTOKEN');
+          this.setState({ token: '' });
+      } 
     };
 
     render() { 
         return ( 
-            <section className='landing'>
+            <>
+            <section className='container'>
+
             <div className='logo'>
                 <img src={ BrewletteLogo } alt="hero"></img>
             </div>
+
             <p className='instructions'>
-                instructions place holder
-            </p>
+            Topping cotton candy topping gingerbread jujubes. Shortbread oat cake powder chocolate cake bear claw pudding pastry. Cake croissant donut fruitcake marshmallow chocolate candy canes gingerbread carrot cake.</p>
+
             <form onSubmit={this.handleSubmit}>
-                name: <input onChange={(e) => this.setState({ name: e.target.value})} type='name' /> 
-                email: <input onChange={(e) => this.setState({ email: e.target.value})} type="email" /> 
-                password: <input onChange={(e) => this.setState({ password: e.target.value})} type="password" /> 
+
+                <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' required /> 
+                <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" required /> 
+                <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" required /> 
                 
                 <button>{this.getButtonType()}</button>
             </form>
             
-                <div>
+                <div className="navlink">
                 <NavLink to="/signup" >{this.getAccountType()}</NavLink>
                 </div>
 
-                <div>
+                <div className="navlink">
                 <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
                 </div>
-                
-            <footer>
-                <p>
-                    copyright place holder
-                </p>
-                <NavLink to='/aboutus'>About Us</NavLink>
-            </footer>
+
             </section>
+            </>
         )
     }
 };

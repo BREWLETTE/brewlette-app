@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+    min-width: 345px;
+    padding: 15px 20px 20px 20px;
+    background-color: rgba(120, 35, 5, .70);
+    margin-bottom: calc(var(--footer-height));
+}
+
+.brewery-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #C7941D;
+    background-color: rgba(11, 25, 83, .70);
+    width: 100%;
+    min-height: 200px;
+    margin-top: 15px;
+}
+
+.brewery-box a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration-line: none;
+}
+
+.roulette-wheel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

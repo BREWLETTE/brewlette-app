@@ -1,3 +1,45 @@
-.landing{
-    margin-left: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+
+.container{
+    height: 100vh;
+    min-width: 345px;
+    padding: 45px 20px 20px 20px;
+    background-color: rgba(120, 35, 5, .70);
+    margin-bottom: calc(var(--footer-height));
+}
+
+.logo img {
+    width: 100%;
+    margin-right: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.navlink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navlink a {
+    color: white;
+}
+
+input {
+    background-color: #0B1953;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+button {
+    font-size: 1.1em;
+    background-color: #C7941D;
+    height: 45px;
+    width: 100px;
+    margin-top: 5px;
 }
