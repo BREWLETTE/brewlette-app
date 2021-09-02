@@ -26,10 +26,16 @@
 }
 
 .not21Box {
-    background-color: rgba(11, 25, 83, .70);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(11, 25, 83, .80);
+    border: #C7941D 2px solid;
     height: 150px;
     width: 200px;
     color: white;
+    font-weight: bold;
     text-align: center;
     align-items: center;
 }
@@ -38,5 +44,20 @@
     width: 100%;
     margin-right: 25px;
 }
+
+h1 {
+    font-weight: black;
+    font-size: 1.9em;
+}
+
+h2 {
+    color: seashell;
+}
+
+h3 {
+    color: seashell;
+    margin-top: 20px;
+}
+
 
 
