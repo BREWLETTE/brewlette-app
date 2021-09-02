@@ -37,10 +37,12 @@ function Spinner(props) {
             <Wheel
                 mustStartSpinning={props.realSpinny}
                 prizeNumber={3}
+                must={mustSpin}
                 data={data}
                 backgroundColors={['#3e3e3e', '#df3428']}
                 textColors={['#ffffff']}
                 onStopSpinning={() => {
+                    
                     setMustSpin(false)}
                 }
                 /> 
