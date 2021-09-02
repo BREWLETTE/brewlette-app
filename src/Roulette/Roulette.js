@@ -16,7 +16,6 @@ class Roulette extends Component {
 
     fetchData = async () => {
         let url = 'https://the-brewlette.herokuapp.com/api/allbreweryinfo'
-        // let url = 'http://localhost:7890/api/allbreweryinfo';
         const userQuery = this.state.query;
         const fullUrl = url + `?search=${userQuery}`;
         let response = await fetch(fullUrl, {
@@ -26,19 +25,15 @@ class Roulette extends Component {
             }
         });
         let data = await response.json();
-        console.log(data);
         return data;
     }
-
 
     handleQueryUpdate = async (event) => {
         await this.setState({ query: event.target.value });
     }
 
-  
     handleSpinClick = async (e) => {
         e.preventDefault();
-        console.log(this.props);
         const data = await this.fetchData();
         new Audio(audio).play();
         const newPrizeNumber = Math.floor(Math.random() * data.length)
@@ -46,6 +41,7 @@ class Roulette extends Component {
         await this.setState({spinny:false})
         this.props.stateHandler(this.state.brewery)
       } 
+
       logout = () => {
         localStorage.removeItem('BREWTOKEN');
         this.setState({ token: '' });
@@ -57,11 +53,11 @@ class Roulette extends Component {
 
             <section className="container">
             
-            <h1>Let's play Brewlette!</h1>
+                <h1>Let's Play Brewlette!</h1>
 
-            <form>
-                <input placeholder="city, state" type="text" onChange={this.handleQueryUpdate}></input>
-            </form>
+                <form>
+                    <input placeholder="city, state" type="text" onChange={this.handleQueryUpdate}></input>
+                </form>
 
                 <div className="roulette-wheel">
                     <Spinner 
@@ -71,19 +67,16 @@ class Roulette extends Component {
                     />
                 </div>
                 
-
                 <div className="brewery-box">
                     <NavLink to={'/detail'}>
                         <h3>{this.state.brewery.brewery_name}</h3>
                         <p>{this.state.brewery.url}</p> 
                         <p>{this.state.brewery.address} {this.state.brewery.city} {this.state.brewery.state}</p> 
                         <p>{this.state.brewery.reviewlink}</p>
-    
                     </NavLink>
                 </div>
-               <Link to="/" onClick={this.logout}>
-                                Logout{' '}
-                            </Link>
+
+               <Link to="/" onClick={this.logout}>Logout{' '}</Link>
             
             </section>
 

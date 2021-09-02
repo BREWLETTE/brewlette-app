@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom';
 import BrewletteLogo from '../assets/BrewletteLogo.png';
 import { getToken } from '../fetch-utils.js';
 import './Landing-Page.css'
-
-
-
 class Landing extends Component {
     state = {  email: '', password: '', name: '' }
 
@@ -20,7 +17,6 @@ class Landing extends Component {
     getButtonType = () => {
         return this.props.type === 'signin' ? "Sign In" : 'Sign Up';
     };
-
 
     handleSubmit = async (event) => {
         event.preventDefault();
@@ -47,33 +43,35 @@ class Landing extends Component {
     render() { 
         return ( 
             <>
-            <section className='container'>
+                <section className='container'>
 
-            <div className='logo'>
-                <img src={ BrewletteLogo } alt="hero"></img>
-            </div>
+                    <div className='logo'>
+                        <img src={ BrewletteLogo } alt="hero"></img>
+                    </div>
 
-            <p className='instructions'>
-            Topping cotton candy topping gingerbread jujubes. Shortbread oat cake powder chocolate cake bear claw pudding pastry. Cake croissant donut fruitcake marshmallow chocolate candy canes gingerbread carrot cake.</p>
+                    <p className='instructions'>
+                    Welcome to Brewlette!! A fun way to find a spot to enjoy a nice brew! Just go ahead and login or sign up to get access. After you’re logged in you can just let us know where you’re looking and click “spin”. This will pick a random brewery for you to enjoy. Favorite a brewery that you would like to visit again! Thanks for taking a gamble on us.
+                    </p>
 
-            <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit}>
 
-                <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' required /> 
-                <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" required /> 
-                <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" required /> 
-                
-                <button>{this.getButtonType()}</button>
-            </form>
-            
-                <div className="navlink">
-                <NavLink to="/signup" >{this.getAccountType()}</NavLink>
-                </div>
+                        <input placeholder="Name" onChange={(e) => this.setState({ name: e.target.value})} type='name' required /> 
+                        <input placeholder="E-mail" onChange={(e) => this.setState({ email: e.target.value})} type="email" required /> 
+                        <input placeholder="Password" onChange={(e) => this.setState({ password: e.target.value})} type="password" required /> 
+                        
+                        <button>{this.getButtonType()}</button>
+                        
+                    </form>
+                    
+                    <div className="navlink">
+                        <NavLink to="/signup" >{this.getAccountType()}</NavLink>
+                    </div>
 
-                <div className="navlink">
-                <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
-                </div>
+                    <div className="navlink">
+                        <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
+                    </div>
 
-            </section>
+                </section>
             </>
         )
     }
