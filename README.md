@@ -11,6 +11,10 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 --This roulete spinner and function was used within our roulette page to spin while random function ran. 
 - https://www.npmjs.com/package/react-custom-roulette
 
+## README
+-- We used examples of README end points examples from this GitHub.
+- https://github.com/yaycub/acnh-villager-api
+
 ## API
 --This API was used to to render breweries within an array based on location query. Our built random function picked a brewery with the array length based on query and returned one random brewery object to display on page. 
 - https://beermapping.com/api/examples/
@@ -18,6 +22,8 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 - https://beermapping.com/?lat=42.36008&lon=-71.05888&z=13
 
 see API return below
+
+# /breweriesfio
 
 [
     {
@@ -57,37 +63,6 @@ see API return below
     }
 ]
 
-
-[
- {
-   _id: "5f5fb4bbbfd05c2aed82e460",
-   url: "https://animalcrossing.fandom.com/wiki/Admiral",
-   name: "Admiral",
-   japaneseName: "イッテツ Ittetsu",
-   image: "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138",
-   quote: "Only quitters give up.",
-   gender: "male",
-   personality: "cranky",
-   species: "bird",
-   birthday: "January 27th (Aquarius)",
-   phrase: "aye aye",
-   skill: "Writing about pickles",
-   goal: "Fisherman",
-   coffee: 
-     {
-       roast: "Blue Mountain",
-       milk: "The regular amount of milk",
-       sugar: "2 spoonfuls of sugar"
-     },
-   song: 
-     {
-       name: "Steep Hill",
-       link: "https://animalcrossing.fandom.com/wiki/Steep_Hill"
-     },
-   style: "n/a",
-   __v: 0
- }
-]
 
 
 <img width="667" alt="Screen Shot 2021-09-02 at 11 17 15 AM" src="https://user-images.githubusercontent.com/80484840/131896021-54899da6-5711-4b86-8388-66ce3a5189e4.png">
