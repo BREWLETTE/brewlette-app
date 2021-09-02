@@ -14,13 +14,14 @@
     border: solid 2px #C7941D;
     background-color: rgba(11, 25, 83, .70);
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     margin-top: 15px;
 }
 
 .brewery-box a {
     font-size: 1.2em;
     color: white;
+    text-decoration-line: none;
 }
 
 .roulette-wheel {
