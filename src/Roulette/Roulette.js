@@ -25,7 +25,7 @@ class Roulette extends Component {
             }
         });
         let data = await response.json();
-        console.log(data);
+        // console.log(data);
         return data;
     }
 
