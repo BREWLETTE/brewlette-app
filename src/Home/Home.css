@@ -6,7 +6,7 @@
     display: none;
 }
 
-.home {
+.container {
     height: 100vh;
     min-width: 345px;
     padding: 0 10px 0 10px;

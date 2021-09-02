@@ -16,6 +16,8 @@
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 5px;
 }
 
 .navlink {
@@ -42,4 +44,8 @@ button {
     height: 45px;
     width: 100px;
     margin-top: 5px;
+}
+
+.instructions {
+    width: 345px;
 }
