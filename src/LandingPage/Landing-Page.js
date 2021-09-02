@@ -34,14 +34,14 @@ class Landing extends Component {
             this.props.type
         );
 
-        this.props.setToken(token);
-        this.props.history.push('/roulette');
-        console.log(typeof(this.state.token))
-        
-         if(token === ''){
-          localStorage.removeItem('BREWTOKEN');
-          this.setState({ token: '' });
-      } 
+        if(token === undefined){
+            alert('Name, Email or Password does not match')
+            localStorage.removeItem('BREWTOKEN');
+            this.setState({ token: '' });
+        } else {
+            this.props.setToken(token);
+            this.props.history.push('/roulette');
+        }
     };
 
     render() { 

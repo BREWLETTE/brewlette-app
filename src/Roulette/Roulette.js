@@ -14,7 +14,8 @@ class Roulette extends Component {
       }
 
     fetchData = async () => {
-        let url = 'http://localhost:7890/api/allbreweryinfo';
+        let url = 'https://the-brewlette.herokuapp.com/api/allbreweryinfo'
+        // let url = 'http://localhost:7890/api/allbreweryinfo';
         const userQuery = this.state.query;
         const fullUrl = url + `?search=${userQuery}`;
         let response = await fetch(fullUrl, {
@@ -23,7 +24,8 @@ class Roulette extends Component {
                 'Authorization': this.props.token,
             }
         });
-        let data = await response.json()
+        let data = await response.json();
+        console.log(data);
         return data;
     }
 
