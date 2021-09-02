@@ -7,6 +7,7 @@ import beerIcon4 from '../src/assets/beerIcon4.png';
 import beerIcon5 from '../src/assets/beerIcon5.png';
 import GitHub_Logo from '../src/assets/GitHub_Logo.png';
 import linkdinbtn from '../src/assets/linkdinbtn.jpg';
+import AliceTwitterButtonLong from '../src/assets/AliceTwitterButtonLong.jpg'
 import { NavLink } from 'react-router-dom';
 
 
@@ -121,19 +122,12 @@ class About extends Component {
                         aria-label="Follow @Alice Retz(she/they) on GitHub">
                         <img src={ GitHub_Logo} alt='github'/>
                     </a>
-                    </section>
 
-                    {/* <a 
-                        href="https://twitter.com/AliceRetz?ref_src=twsrc%5Etfw" 
-                        className="twitter-follow-button" 
-                        data-show-count="false">
-                        Follow @AliceRetz
-                    </a> */}
-                    {/* <script 
-                        async 
-                        src="https://platform.twitter.com/widgets.js" 
-                        charSet="utf-8">
-                    </script> */}
+                    <a className="twitter-button" 
+                        href="https://twitter.com/AliceRetz">
+                        <img src={ AliceTwitterButtonLong } alt='twitter'/>
+                    </a>
+                    </section>
                 </section>   
             </section> 
 
