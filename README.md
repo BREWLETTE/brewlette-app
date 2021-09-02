@@ -25,46 +25,6 @@ see API return below
 
 # /allbreweryinfo
 
-[
-    {
-        address: “2220 Blake Street”,
-        brewery_id: 199,
-        brewery_name: “Breckenridge Ball Park Brew Pub”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=199&amp;d=5”,
-        phone_number: “(303) 297-3644”,
-        state: “CO”,
-        url: “breckbrew.com/”,
-        zip_code: “80205",
-        [[Prototype]]: Object
-    },
-    {
-        address: “471 Kalamath St.“,
-        brewery_id: 200,
-        brewery_name: “Breckenridge BBQ and Brew Pub”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=200&amp;d=5”,
-        phone_number: “(303) 623-2739”,
-        state: “CO”,
-        url: “breckbrew.com/”,
-        zip_code: “80204”,
-        [[Prototype]]: Object
-    },
-    {
-        address: “4700 Cherry Creek Dr. South”,
-        brewery_id: 238,
-        brewery_name: “Bull and Bush Pub and Brewery”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=238&amp;d=5”,
-        phone_number: “(303) 759-0333”,
-        state: “CO”,
-        url: “bullandbush.com/”,
-        zip_code: “80246”
-    }
-]
-
-
-
 <img width="667" alt="Screen Shot 2021-09-02 at 11 17 15 AM" src="https://user-images.githubusercontent.com/80484840/131896021-54899da6-5711-4b86-8388-66ce3a5189e4.png">
 
 
