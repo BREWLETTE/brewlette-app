@@ -51,10 +51,17 @@ class Detail extends Component {
             <main>
                               {/* COme back to this BELOW */}
                 <section className="been-here">This is one of your favorites!</section> 
-                
+
+                <iframe className="iframe-container" src={this.state.brewery.five_mile_proxylink} title="description" ></iframe>
+
                 <section className="map"></section>
                 <section className="info">
+
                     <h1>{this.props.brewery.brewery_name}</h1>
+                    <a target="_blank" rel="noreferrer" href={`https://${this.props.brewery.url}`}>{this.props.brewery.url}</a>
+                    <p>{this.props.brewery.address} {this.props.brewery.city} {this.props.brewery.state} {this.props.brewery.zip_code}</p> 
+                    <p>{this.props.brewery.reviewlink}</p>
+                    <p><a id="phone" href={`tel:${this.props.brewery.phone_number}`}>{this.props.brewery.phone_number}</a></p>
 
                 </section>
                 <section className="button-box">
@@ -64,6 +71,8 @@ class Detail extends Component {
                     <NavLink to={'/roulette'}>
                         <button>Spin Again</button>
                     </NavLink>
+
+
                 </section>
             </main>
          );
