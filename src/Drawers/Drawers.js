@@ -11,7 +11,6 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Tooltip } from '@material-ui/core';
-import HomeIcon from '@material-ui/icons/Home';
 import LocalDrinkIcon from '@material-ui/icons/LocalDrink';
 
 const useStyles = makeStyles({
@@ -50,10 +49,6 @@ function Drawers(props) {
       <List>
         {[
         {
-            name: 'Home',
-            utility: props['goHome']
-          },
-        {
           name: 'My Profile',
           utility: props['goProfile']
         },
@@ -69,13 +64,11 @@ function Drawers(props) {
           <ListItem onClick={text.utility} button key={text.name} style={{marginTop: '25px'}}>
             <ListItemIcon>
             {(() => {
-                if (index === 0 ) {
-                  return <HomeIcon/>
-              } else if ( index === 1) {
+              if ( index === 0) {
                   return <AccountCircleIcon/>
-              }   else if ( index === 2) {
+              }   else if ( index === 1) {
                     return <LocalDrinkIcon/>
-              } else if ( index === 3) {
+              } else if ( index === 2) {
                 return <ExitToAppIcon/>
           } 
                 }) ()}
@@ -84,7 +77,7 @@ function Drawers(props) {
           </ListItem>
         ))}
       </List>
-    </div> 
+    </div>
   );
 
   return (

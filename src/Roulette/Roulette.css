@@ -1,6 +1,7 @@
 .container{
     height: 100vh;
     min-width: 345px;
+    max-width: 600px;
     padding: 15px 20px 20px 20px;
     background-color: rgba(120, 35, 5, .70);
     margin-bottom: calc(var(--footer-height));
@@ -14,7 +15,7 @@
     border: solid 2px #C7941D;
     background-color: rgba(11, 25, 83, .70);
     width: 100%;
-    min-height: 200px;
+    min-height: 150px;
     margin-top: 15px;
 }
 

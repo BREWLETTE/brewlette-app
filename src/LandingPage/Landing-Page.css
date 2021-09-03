@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,900&display=swap');
 
-.container{
+.container-landing{
     height: 100vh;
     min-width: 345px;
+    max-width: 600px;
     padding: 45px 20px 20px 20px;
     background-color: rgba(120, 35, 5, .70);
     margin-bottom: calc(var(--footer-height));
@@ -16,9 +17,11 @@
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 5px;
 }
 
-.navlink {
+.navlink-landing {
     text-align: center;
     margin-top: 20px;
 }
@@ -42,4 +45,8 @@ button {
     height: 45px;
     width: 100px;
     margin-top: 5px;
+}
+
+.instructions {
+    width: 345px;
 }

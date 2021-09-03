@@ -1,6 +1,4 @@
 const URL = 'https://the-brewlette.herokuapp.com'
-// const URL = 'http://localhost:7890'
-
 
 // GET TOKEN FUNCTION
 export async function getToken(signInInfo, type) {
@@ -22,12 +20,13 @@ export async function getToken(signInInfo, type) {
 //GET USER BREWERIES
 export async function getBreweries(token) {
 
-    const authURL = `${URL}/api/breweries}`; 
+    const authURL = `${URL}/api/breweries`; 
     const response = await fetch(authURL, {
         method: 'GET',
+        withCredentials: true,
         headers: {
-            'Content-Type': 'application/json',
-            'Authorization': token
+          'Authorization': token,
+          'Content-Type': 'application/json'
         }
     });
     const breweryData = await response.json();

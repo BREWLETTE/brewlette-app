@@ -1,12 +1,26 @@
 
 # BREWLETTE APP VERSION 1.0.0
+# www.brewlette.rocks
 ![Screen Shot 2021-09-01 at 3 51 49 PM](https://user-images.githubusercontent.com/80484840/131755700-591ca056-73a3-42bd-8ad8-2e668822fae6.png)
 
 
 ## DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
 In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendly Brewlette app. Working remotely, the team utilized multiple tools to stay connected and openly communicate on project plans. Our team utilized highly practiced and desired frameworks, libraries, etc. to create an easy fun app that randomly finds you a place to drink. 
 
+# DESCRIPTION
+Brewlette is a major problem solving app built for you by major problem solvers. Have you ever been in a cool new or previous spot but no one will make a deicision on where to grab a brew? You (21 and over) are who we had in mind when we created this app!! Brewlette is a roulette randomizer that will get you a place to enjoy a drink in no time. With a couple clicks you will be able to get some details about a brewery picked by yours truly, Brewlette. It’s as simple as logging in or signing up(if you’re 21 or over), inputting your location, and clicking spin! There are features for you to save breweries you enjoyed so you can visit them again! Brewlette, version 1.0.0 — solving your brewery selections spin by spin. 
+
+# MISSION STATEMENT
+'An easy fun app that randomly finds you a place to drink'
+
 # REFERENCES
+## icons
+- <a href="https://www.freepik.com/vectors/icons">Icons vector created by freepik - www.freepik.com</a>
+- <a href="https://www.freepik.com/photos/food">Food photo created by master1305 - www.freepik.com</a>
+
+## beer sound
+-- This was the MP3 we downloaded that plays in hour spin handler.
+- https://www.soundjay.com/drink-sounds-1.html
 ## react-custom-roulette
 --This roulete spinner and function was used within our roulette page to spin while random function ran. 
 - https://www.npmjs.com/package/react-custom-roulette
@@ -23,47 +37,7 @@ In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendl
 
 see API return below
 
-# /breweriesinfo
-
-[
-    {
-        address: “2220 Blake Street”,
-        brewery_id: 199,
-        brewery_name: “Breckenridge Ball Park Brew Pub”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=199&amp;d=5”,
-        phone_number: “(303) 297-3644”,
-        state: “CO”,
-        url: “breckbrew.com/”,
-        zip_code: “80205",
-        [[Prototype]]: Object
-    },
-    {
-        address: “471 Kalamath St.“,
-        brewery_id: 200,
-        brewery_name: “Breckenridge BBQ and Brew Pub”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=200&amp;d=5”,
-        phone_number: “(303) 623-2739”,
-        state: “CO”,
-        url: “breckbrew.com/”,
-        zip_code: “80204”,
-        [[Prototype]]: Object
-    },
-    {
-        address: “4700 Cherry Creek Dr. South”,
-        brewery_id: 238,
-        brewery_name: “Bull and Bush Pub and Brewery”,
-        city: “Denver”,
-        five_mile_proxylink: “http://beermapping.com/maps/proxymaps.php?locid=238&amp;d=5”,
-        phone_number: “(303) 759-0333”,
-        state: “CO”,
-        url: “bullandbush.com/”,
-        zip_code: “80246”
-    }
-]
-
-
+# /allbreweryinfo
 
 <img width="667" alt="Screen Shot 2021-09-02 at 11 17 15 AM" src="https://user-images.githubusercontent.com/80484840/131896021-54899da6-5711-4b86-8388-66ce3a5189e4.png">
 
@@ -75,10 +49,26 @@ see API return below
 
 # TECH STACK
 
-## Frameworks
+| FRAMEWORKS | LIBRARIES             | LANGUAGES  | TESTING    | DATABASES  | TOOLS          |
+|------------|-----------------------|------------|------------|------------|----------------|
+| ReactJS    | Node.js               | JavaScript | Jest Suite | PostgreSQL | VS Code        |
+|            | Node-fetch            | CSS        | TDD        |            | Heroku         |
+|            | React-router-dom      |            | CI         |            | Netlify        |
+|            | React-custom-roulette |            |            |            | Miro           |
+|            | Express               |            |            |            | Postman        |
+|            |                       |            |            |            | Thunder Client |
+|            |                       |            |            |            | BeeKeeper      |
+|            |                       |            |            |            | Coolors        |
+|            |                       |            |            |            | InkScape       |
+|            |                       |            |            |            | Git            |
+|            |                       |            |            |            | GitHub         |
+|            |                       |            |            |            | Slack          |
+
+<!-- ## Frameworks
 - ReactJS
 
 ## Libraries
+- Node.js
 - Node-fetch 
 - React-router-dom 
 - React-custom-roulette
@@ -109,13 +99,8 @@ see API return below
 - Git 
 - GitHub 
 - Slack
-- Zoom
+- Zoom -->
 
-# DESCRIPTION
-Brewlette is a major problem solving app built for you by major problem solvers. Have you ever been in a cool new or previous spot but no one will make a deicision on where to grab a brew? You (21 and over) are who we had in mind when we created this app!! Brewlette is a roulette randomizer that will get you a place to enjoy a drink in no time. With a couple clicks you will be able to get some details about a brewery picked by yours truly, Brewlette. It’s as simple as logging in or signing up(if you’re 21 or over), inputting your location, and clicking spin! There are features for you to save breweries you enjoyed so you can visit them again! Brewlette, version 1.0.0 — solving your brewery selections spin by spin. 
-
-# MISSION STATEMENT
-'An easy fun app that randomly finds you a place to drink'
 
 # GROUP AGREEMENTS
 - majority rules with tough decisions
@@ -176,7 +161,7 @@ merge into final commits into DEV || MAIN
 
 
 # NOTES
-![Screen Shot 2021-09-01 at 3 58 33 PM](https://user-images.githubusercontent.com/80484840/131756278-7630ddf8-45f3-4341-af75-f9d31b7e8e5e.png)
+![Screen Shot 2021-09-02 at 3 05 39 PM](https://user-images.githubusercontent.com/80484840/131922477-8e9e41a3-624d-4a0a-af85-5218b33a56a5.png)
 
 
 ![Screen Shot 2021-09-01 at 3 36 19 PM](https://user-images.githubusercontent.com/80484840/131754359-6e016dbd-c599-46be-a744-b868c9128eb3.png)
