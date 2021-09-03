@@ -25,7 +25,6 @@ class Roulette extends Component {
             }
         });
         let data = await response.json();
-
         return data;
     }
 
@@ -36,8 +35,8 @@ class Roulette extends Component {
     handleSpinClick = async (e) => {
         e.preventDefault();
         const data = await this.fetchData();
-        new Audio(audio).play();
         const newPrizeNumber = Math.floor(Math.random() * data.length)
+        await new Audio(audio).play();
         await this.setState({ brewery: data[newPrizeNumber], spinny: true})
         await this.setState({spinny:false})
         this.props.stateHandler(this.state.brewery)
@@ -75,12 +74,6 @@ class Roulette extends Component {
                         <p>{this.state.brewery.address} {this.state.brewery.city} {this.state.brewery.state}</p> 
                         <p>{this.state.brewery.reviewlink}</p>
                     </NavLink>
-                </div>
-
-                <div className="logout-button">
-                    <Link to="/" onClick={this.logout}>
-                        Logout{' '}
-                    </Link>
                 </div>
 
             </section>

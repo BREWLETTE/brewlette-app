@@ -9,7 +9,6 @@ import About from './About.js';
 import Detail from './Detail/Detail.js';
 import Drawers from './Drawers/Drawers';
 import Profile from './Profile/Profile';
-// import { Drawer } from '@material-ui/core';
 
 class App extends Component {
   state = { token: JSON.parse(localStorage.getItem('BREWTOKEN')), brewery:{} }
@@ -17,7 +16,7 @@ class App extends Component {
     this.setState({token: val});
   }
   stateHandler = async (brewObj) => {
-    // console.log('setHandler RUNNING')
+
     await this.setState({
       brewery: brewObj
     })
@@ -40,14 +39,13 @@ redirectRoulette = () =>{
   window.location.replace('/roulette')
 }
 render() { 
-  // console.log(this.state.brewery);
+
     return (  
       <>
       <BrowserRouter>
-        <Drawers
+      <Drawers
             logOut ={this.logout}
             goProfile = {this.redirectProfile}
-            goHome = {this.redirectHome}
             goRoulette = {this.redirectRoulette}
         />
       <Switch>
@@ -63,7 +61,6 @@ render() {
             <Route path='/aboutus' render={(routerProps) => (<About type='aboutus'
             {...routerProps}/>)}/>
 
-             
              <Route path="/roulette" 
              render={(routerProps) => this.state.token ? 
               (<Roulette type='roulette'
@@ -72,7 +69,6 @@ render() {
              stateHandler={this.stateHandler} 
              {...routerProps}/>) : 
              (<Redirect to='/signin'/>)} />
-            
 
             <Route path="/detail" render={(routerProps) => (<Detail type='detail'
              token={this.state.token} brewery={this.state.brewery} {...routerProps}/>)} />  
@@ -80,10 +76,9 @@ render() {
             <Route path="/profile" render={(routerProps) => (<Profile type='profile'
              token={this.state.token} brewery={this.state.brewery} {...routerProps}/>)} />  
 
-
       </Switch>
 
-      <Footer/>
+      <Footer />
       </BrowserRouter>
       </>
     );

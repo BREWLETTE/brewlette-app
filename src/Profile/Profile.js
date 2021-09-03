@@ -11,9 +11,7 @@ class Profile extends Component {
 
     fetchUserBrews= async () =>{
         const userBrews = await getBreweries (this.props.token);
-        // console.log(userBrews);
         this.setState({brews: userBrews})
-        console.log(this.state.brews)
     }
     render() { 
         return (

@@ -8,15 +8,13 @@ import beerIcon5 from '../src/assets/beerIcon5.png';
 import GitHub_Logo from '../src/assets/GitHub_Logo.png';
 import linkdinbtn from '../src/assets/linkdinbtn.jpg';
 import AliceTwitterButtonLong from '../src/assets/AliceTwitterButtonLong.jpg'
-import { NavLink } from 'react-router-dom';
-
 
 class About extends Component {
     render() { 
         return ( 
         <>
-        <section className="container">
-        <NavLink to ='/'>Go Back Home</NavLink>
+        <section className="container-about">
+
             <section className="mission">
                 <p>Brewlette is a major problem solving app built for you by major problem solvers. Have you ever been in a cool new or previous spot but no one will make a deicision on where to grab a brew? You (21 and over) are who we had in mind when we created this app!! Brewlette is a roulette randomizer that will get you a place to enjoy a drink in no time. With a couple clicks you will be able to get some details about a brewery picked by yours truly, Brewlette. It’s as simple as logging in or signing up(if you’re 21 or over), inputting your location, and clicking spin! There are features for you to save breweries you enjoyed so you can visit them again! Brewlette, version 1.0.0 — solving your brewery selections spin by spin.</p>
             </section>
@@ -105,7 +103,7 @@ class About extends Component {
                     </section> 
             </section>
 
-            <section className='name-section'>
+            <section className='name-section' id="alice">
                 <section className='beer'>
                     <img src={ beerIcon5 } alt ='beer' /> 
                 </section>  

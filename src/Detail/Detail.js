@@ -7,12 +7,6 @@ class Detail extends Component {
 
     state = { brewery: {}, favorite: false, hidden: false }
 
-    
-
-    componentDidMount = async () => {
-        console.log("LOOK???",this.props)
-    };
-
     token = this.props.token;
 
     handleAddNewbrew = async () => {
@@ -29,8 +23,6 @@ class Detail extends Component {
         })
         await this.setState({brewery: addedBrew})
         await this.setState({hidden: true})
-        console.log('it!!!!!!!!!!', this.state.brewery)
-
     };
 
     handleUpdateFave = async (event) =>{
@@ -43,7 +35,6 @@ class Detail extends Component {
             visited: this.state.brewery.visited,
             favorited: true
           }
-          console.log('????????',updatedData);
         await updateBreweryData(this.token, updatedData)
           
     }
@@ -52,9 +43,9 @@ class Detail extends Component {
         return ( 
             <section className="container">
 
-                <iframe width="350" height="315" src={`${this.props.brewery.five_mile_proxylink}`} frameborder="0"
+                <iframe width="350" height="315" src={`${this.props.brewery.five_mile_proxylink}`} frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen title="brewery-places"></iframe>
+                allowFullScreen title="brewery-places"></iframe>
 
                 <section className="map"></section>
                 <section className="info">
@@ -79,6 +70,10 @@ class Detail extends Component {
                 }
                 <NavLink to={'/roulette'}>
                     <button>Spin Again</button>
+                </NavLink>
+                
+                <NavLink to={'/profile'}>
+                    <button>My Profile</button>
                 </NavLink>
                 </section>
 

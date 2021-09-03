@@ -42,7 +42,7 @@ class Landing extends Component {
 
     render() { 
         return ( 
-            <section className='container'>
+            <section className='container-landing'>
 
             <div className='logo'>
                 <img src={ BrewletteLogo } alt="hero"></img>
@@ -60,11 +60,11 @@ class Landing extends Component {
                 <button>{this.getButtonType()}</button>
             </form>
             
-                <div className="navlink">
+                <div className="navlink-landing">
                 <NavLink to="/signup" >{this.getAccountType()}</NavLink>
                 </div>
 
-                <div className="navlink">
+                <div className="navlink-landing">
                 <NavLink to="/signin" >{this.geTypeMessage()}</NavLink>
                 </div>
 

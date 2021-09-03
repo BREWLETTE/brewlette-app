@@ -15,7 +15,7 @@
     border: solid 2px #C7941D;
     background-color: rgba(11, 25, 83, .70);
     width: 100%;
-    min-height: 200px;
+    min-height: 150px;
     margin-top: 15px;
 }
 
@@ -30,10 +30,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.logout-button {
-    font-weight: bold;
-    margin-top: 10px;
-    color: black;
 }

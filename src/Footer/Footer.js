@@ -8,7 +8,7 @@ export default class Footer extends Component {
     
             <footer>
                 <NavLink to='/aboutus'>About Us</NavLink>
-                <p>copyright &copy; 2021</p>
+                <p>Brewlette Rocks! &copy; copyright 2021 </p>
             </footer>
             
         )
