@@ -4,7 +4,13 @@
 ![Screen Shot 2021-09-01 at 3 51 49 PM](https://user-images.githubusercontent.com/80484840/131755700-591ca056-73a3-42bd-8ad8-2e668822fae6.png)
 
 
-## DEV TEAM: Triana Cerda, Simon Kaine, Alice Retz, Aemilius Morgan, Cristian Montes
+## DEV TEAM: 
+ - Triana Cerda-- https://www.linkedin.com/in/triana-cerda/
+ - Simon Kaine-- https://www.linkedin.com/in/simonbishopkaine/
+ - Alice Retz-- https://www.linkedin.com/in/aliceretz/
+ - Aemilius Morgan-- https://www.linkedin.com/in/aemilius-morgan-1b0172171/
+ - Cristian Montes-- https://www.linkedin.com/in/cristianmontesmujica/
+
 In a 5 day sprint our team brainstormed, planned, and delivered a mobile friendly Brewlette app. Working remotely, the team utilized multiple tools to stay connected and openly communicate on project plans. Our team utilized highly practiced and desired frameworks, libraries, etc. to create an easy fun app that randomly finds you a place to drink. 
 
 # DESCRIPTION
