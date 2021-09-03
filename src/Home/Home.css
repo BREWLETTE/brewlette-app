@@ -8,7 +8,7 @@
 
 .container {
     height: 100vh;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 345px;
     padding: 0 10px 0 10px;
     background-color: rgba(120, 35, 5, .70);

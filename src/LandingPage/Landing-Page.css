@@ -3,7 +3,7 @@
 .container{
     height: 100vh;
     min-width: 345px;
-    max-width: 500px;
+    max-width: 600px;
     padding: 45px 20px 20px 20px;
     background-color: rgba(120, 35, 5, .70);
     margin-bottom: calc(var(--footer-height));
