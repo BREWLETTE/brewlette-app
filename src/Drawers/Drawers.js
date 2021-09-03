@@ -45,7 +45,7 @@ function Drawers(props) {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-    >,
+    >
       <List>
         {[
         {
