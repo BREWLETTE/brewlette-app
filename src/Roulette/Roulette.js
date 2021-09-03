@@ -25,6 +25,7 @@ class Roulette extends Component {
             }
         });
         let data = await response.json();
+
         return data;
     }
 
@@ -76,8 +77,12 @@ class Roulette extends Component {
                     </NavLink>
                 </div>
 
-               <Link to="/" onClick={this.logout}>Logout{' '}</Link>
-            
+                <div className="logout-button">
+                    <Link to="/" onClick={this.logout}>
+                        Logout{' '}
+                    </Link>
+                </div>
+
             </section>
 
          );

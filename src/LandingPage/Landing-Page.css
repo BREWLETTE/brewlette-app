@@ -3,6 +3,7 @@
 .container{
     height: 100vh;
     min-width: 345px;
+    max-width: 500px;
     padding: 45px 20px 20px 20px;
     background-color: rgba(120, 35, 5, .70);
     margin-bottom: calc(var(--footer-height));
@@ -16,6 +17,8 @@
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 5px;
 }
 
 .navlink {
@@ -42,4 +45,8 @@ button {
     height: 45px;
     width: 100px;
     margin-top: 5px;
+}
+
+.instructions {
+    width: 345px;
 }

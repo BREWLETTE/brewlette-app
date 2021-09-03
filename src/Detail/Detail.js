@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { addBrewToUser,updateBreweryData } from '../fetch-utils.js';
+import './Detail.css'
 
 class Detail extends Component {
 
-    state = { brewery: {}, favorite: false }
+    state = { brewery: {}, favorite: false, hidden: false }
 
     
 
@@ -27,6 +28,7 @@ class Detail extends Component {
             favorited: false
         })
         await this.setState({brewery: addedBrew})
+        await this.setState({hidden: true})
         console.log('it!!!!!!!!!!', this.state.brewery)
 
     };
@@ -48,11 +50,11 @@ class Detail extends Component {
     
     render() { 
         return ( 
-            <main>
-                              {/* COme back to this BELOW */}
-                <section className="been-here">This is one of your favorites!</section> 
+            <section className="container">
 
-                <iframe className="iframe-container" src={this.state.brewery.five_mile_proxylink} title="description" ></iframe>
+                <iframe width="350" height="315" src={`${this.props.brewery.five_mile_proxylink}`} frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="brewery-places"></iframe>
 
                 <section className="map"></section>
                 <section className="info">
@@ -62,19 +64,25 @@ class Detail extends Component {
                     <p>{this.props.brewery.address} {this.props.brewery.city} {this.props.brewery.state} {this.props.brewery.zip_code}</p> 
                     <p>{this.props.brewery.reviewlink}</p>
                     <p><a id="phone" href={`tel:${this.props.brewery.phone_number}`}>{this.props.brewery.phone_number}</a></p>
-
+                    
                 </section>
+
                 <section className="button-box">
-                    <button onClick={this.handleAddNewbrew}>WE GOING</button>
-                    <button onClick={this.handleUpdateFave}>Favorite</button>
-
-                    <NavLink to={'/roulette'}>
-                        <button>Spin Again</button>
-                    </NavLink>
-
-
+                {!this.state.hidden ?
+                    <div>
+                        <button onClick={this.handleAddNewbrew}>Been here before?</button>
+                    </div>
+                    : 
+                    <div>
+                    <button onClick={this.handleUpdateFave}>Save As Favorite</button>
+                    </div>
+                }
+                <NavLink to={'/roulette'}>
+                    <button>Spin Again</button>
+                </NavLink>
                 </section>
-            </main>
+
+            </section>
          );
     }
 }

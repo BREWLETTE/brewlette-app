@@ -1,19 +1,55 @@
 .container{
-    height: 100vh;
+    height: auto;
     min-width: 345px;
+    max-width: 500px;
     padding: 15px 20px 20px 20px;
     background-color: rgba(120, 35, 5, .70);
-    margin-bottom: calc(var(--footer-height));
+    margin-bottom: 70px;
     background-attachment: fixed;
-    padding-bottom: 200px;
-    margin-bottom: 200px;
+
+}
+
+.mission {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(11, 25, 83, .70);
+    border: #C7941D 2px solid;
+    height: auto;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 .name-section {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    width: 350px;
+    justify-content: left;
+    align-items: center;
+    width: auto;
+    margin: 10px;
+}
+
+.beer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 100px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: center;
 }
 
 .github-button img {
@@ -27,6 +63,9 @@
 h4 {
     color: #C7941D;
     text-shadow: #580f01 3px 3px;
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin: 0;
+}
+a {
+    color: white;
 }
