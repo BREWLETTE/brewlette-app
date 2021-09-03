@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom';
 import BrewletteLogo from '../assets/BrewletteLogo.png';
 import { getToken } from '../fetch-utils.js';
 import './Landing-Page.css'
-
-
-
 class Landing extends Component {
     state = {  email: '', password: '', name: '' }
 
@@ -20,7 +17,6 @@ class Landing extends Component {
     getButtonType = () => {
         return this.props.type === 'signin' ? "Sign In" : 'Sign Up';
     };
-
 
     handleSubmit = async (event) => {
         event.preventDefault();
