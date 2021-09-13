@@ -38,14 +38,8 @@ class Roulette extends Component {
         const newPrizeNumber = Math.floor(Math.random() * data.length)
         await new Audio(audio).play();
         await this.setState({ brewery: data[newPrizeNumber], spinny: true})
-        await this.setState({spinny:false})
         this.props.stateHandler(this.state.brewery)
       } 
-
-      logout = () => {
-        localStorage.removeItem('BREWTOKEN');
-        this.setState({ token: '' });
-    };
 
     render() { 
 
@@ -64,17 +58,21 @@ class Roulette extends Component {
                         brewData={this.state.brewery}
                         handleSpin={this.handleSpinClick}
                         realSpinny = {this.state.spinny}
+                        onStopSpinning = {() => this.setState({spinny:false})}
                     />
                 </div>
                 
-                <div className="brewery-box">
-                    <NavLink to={'/detail'}>
-                        <h3>{this.state.brewery.brewery_name}</h3>
-                        <p>{this.state.brewery.url}</p> 
-                        <p>{this.state.brewery.address} {this.state.brewery.city} {this.state.brewery.state}</p> 
-                        <p>{this.state.brewery.reviewlink}</p>
-                    </NavLink>
-                </div>
+                    
+                    <div className="brewery-box">
+                        { !this.state.spinny && (
+                            <NavLink to={'/detail'}>
+                                <h3>{this.state.brewery.brewery_name}</h3>
+                                <p>{this.state.brewery.url}</p> 
+                                <p>{this.state.brewery.address} {this.state.brewery.city} {this.state.brewery.state}</p> 
+                                <p>{this.state.brewery.reviewlink}</p>
+                            </NavLink>
+                        )}
+                        </div>
 
             </section>
 

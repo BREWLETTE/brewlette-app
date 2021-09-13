@@ -39,6 +39,7 @@ function Spinner(props) {
                 backgroundColors={['#3e3e3e', '#df3428']}
                 textColors={['#ffffff']}
                 onStopSpinning={() => {
+                    props.onStopSpinning()
                     setMustSpin(false)}
                 }
             /> 
