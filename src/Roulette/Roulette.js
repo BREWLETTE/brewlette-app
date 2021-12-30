@@ -16,7 +16,7 @@ class Roulette extends Component {
 
     fetchData = async () => {
         let url = 'https://the-brewlette.herokuapp.com/api/allbreweryinfo'
-        const userQuery = this.state.query.replace(' ', '');
+        const userQuery = this.state.query.replace(/\s/g, '');
         const fullUrl = url + `?search=${userQuery}`;
         let response = await fetch(fullUrl, {
             method:'GET',
